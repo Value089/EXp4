@@ -5,13 +5,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>VAlue089</title>
+  <title>Value089 - Course Offerings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #6200ea;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #3700b3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('banner.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .course-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .course {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .promo {
+      background-color: #bb86fc;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #3700b3;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
 
 <body>
-  <main>
-    <h1>VAlue089</h1>
-  </main>
+  <header>
+    <h1>Value089</h1>
+  </header>
+
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#promotions">Promotions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Unlock Your Potential with Our Courses</h2>
+    <p>Join thousands of learners and start your journey today!</p>
+  </section>
+
+  <section id="courses" class="course-section">
+    <div class="course">
+      <h3>Web Development</h3>
+      <p>Learn HTML, CSS, JavaScript, and more.</p>
+    </div>
+    <div class="course">
+      <h3>Data Science</h3>
+      <p>Master Python, Machine Learning, and AI.</p>
+    </div>
+    <div class="course">
+      <h3>Mobile App Development</h3>
+      <p>Build apps for Android and iOS.</p>
+    </div>
+  </section>
+
+  <section id="promotions" class="promo">
+    <h2>Special Offer!</h2>
+    <p>Enroll now and get 20% off on all courses. Limited time only!</p>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 Value089. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
